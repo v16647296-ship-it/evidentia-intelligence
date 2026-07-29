@@ -64,7 +64,18 @@
             font-size: 1.2rem;
             color: var(--text-secondary);
             max-width: 800px;
+            margin-bottom: 2rem;
+        }
+        .philosophy-tag {
+            display: inline-block;
+            background: var(--surface-card);
+            border-left: 3px solid var(--accent);
+            padding: 0.8rem 1.2rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 1.05rem;
             margin-bottom: 2.5rem;
+            border-radius: 0 4px 4px 0;
         }
         .btn {
             display: inline-block;
@@ -129,6 +140,38 @@
         .check-item span { color: var(--accent); font-weight: bold; font-size: 1.2rem; }
         .check-item p { color: var(--text-primary); font-weight: 500; font-size: 0.95rem; }
 
+        .industries-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .industry-tag {
+            background: var(--surface-card);
+            border: 1px solid var(--border-color);
+            padding: 0.7rem 1.2rem;
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .step-box {
+            background: var(--surface-card);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .step-num { color: var(--accent); font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: block;}
+        .step-title { color: var(--text-primary); font-weight: 600; font-size: 1rem; }
+
         .footer {
             border-top: 1px solid var(--border-color);
             padding: 4rem 2rem;
@@ -152,6 +195,7 @@
         <div class="logo">Evidentia <span>Intelligence™</span></div>
         <nav>
             <a href="#services">Services</a>
+            <a href="#industries">Industries</a>
             <a href="#why-us">Why Evidentia</a>
             <a href="#standards">EIS Standard</a>
             <a href="#contact">Contact</a>
@@ -161,7 +205,10 @@
     <section class="hero">
         <h1>Judicial-Grade Corporate Intelligence<br>& Digital Evidence</h1>
         <p>Evidence that withstands courts, arbitrations, and boardroom decisions. We provide specialized investigative and due diligence services for law firms, corporate legal departments, financial institutions, and compliance professionals.</p>
-        <a href="#contact" class="btn">Request a Confidential Consultation</a>
+        <div class="philosophy-tag">“We do not sell data. We deliver verified intelligence.”</div>
+        <div>
+            <a href="#contact" class="btn">Request a Confidential Consultation</a>
+        </div>
     </section>
 
     <section id="services">
@@ -207,6 +254,20 @@
         </div>
     </section>
 
+    <section id="industries">
+        <h2>Industries We Serve</h2>
+        <p class="section-desc">Tailored intelligence solutions deployed for high-stakes legal, financial, and strategic mandates.</p>
+        <div class="industries-tags">
+            <div class="industry-tag">Law Firms & Litigators</div>
+            <div class="industry-tag">Corporate Legal Departments</div>
+            <div class="industry-tag">Financial Institutions</div>
+            <div class="industry-tag">Investment Funds & PE</div>
+            <div class="industry-tag">Insurance Companies</div>
+            <div class="industry-tag">Compliance Teams</div>
+            <div class="industry-tag">Corporate Security Directors</div>
+        </div>
+    </section>
+
     <section id="why-us">
         <h2>Why Clients Choose Evidentia</h2>
         <p class="section-desc">Not another generic OSINT provider. We transform publicly available data into structured, verifiable intelligence tailored for high-stakes legal and corporate decisions.</p>
@@ -230,23 +291,58 @@
             </div>
         </div>
 
-        <h2 style="font-size: 1.6rem; margin-bottom: 1.5rem;">Commercial Offerings</h2>
-        <div class="grid">
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Every Engagement Includes</h2>
+        <p class="section-desc" style="margin-bottom: 1.5rem;">Standardized output packages designed for immediate legal and executive review:</p>
+        <div class="grid" style="margin-bottom: 3rem;">
             <div class="card">
-                <h3>Intelligence Products</h3>
-                <p>Executive Intelligence Reports, Corporate Due Diligence Dossiers, Judicial Evidence Packages, Sanctions Compliance Audits, and Emergency Investigation Support.</p>
+                <h3>Deliverables Matrix</h3>
+                <ul>
+                    <li>Executive Brief & Key Findings</li>
+                    <li>Structured Risk Matrix</li>
+                    <li>Entity & Affiliation Graph</li>
+                    <li>Chronological Timeline</li>
+                </ul>
             </div>
             <div class="card">
-                <h3>Expert Advisory</h3>
-                <p>Expert Witness Support, Independent Verification, Custom Corporate Monitoring, and Boardroom Decision Advisory under strict confidentiality.</p>
+                <h3>Evidentiary Integrity</h3>
+                <ul>
+                    <li>SHA-256 Chain of Custody Manifest</li>
+                    <li>Source Reliability Matrix</li>
+                    <li>Court-Ready Verified PDF Report</li>
+                    <li>Independent Verification Log</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Investigation Workflow</h2>
+        <div class="process-steps">
+            <div class="step-box">
+                <span class="step-num">Step 01</span>
+                <div class="step-title">Collection</div>
+            </div>
+            <div class="step-box">
+                <span class="step-num">Step 02</span>
+                <div class="step-title">Verification</div>
+            </div>
+            <div class="step-box">
+                <span class="step-num">Step 03</span>
+                <div class="step-title">Analysis</div>
+            </div>
+            <div class="step-box">
+                <span class="step-num">Step 04</span>
+                <div class="step-title">Preservation</div>
+            </div>
+            <div class="step-box">
+                <span class="step-num">Step 05</span>
+                <div class="step-title">Client Report</div>
             </div>
         </div>
     </section>
 
     <section id="standards">
-        <h2>The Evidentia Intelligence Standard™ (EIS)</h2>
+        <h2>Trusted Methodology</h2>
         <p class="section-desc">
-            Every report, dossier, and artifact is governed by the <strong>EIS-1.0 protocol</strong>. We replace subjective assumptions with verifiable, reproducible, and legally defensible intelligence designed to survive judicial scrutiny.
+            Every investigation follows the <strong>Evidentia Intelligence Standard™ (EIS-1.0)</strong>. We replace subjective assumptions with verifiable, reproducible, and legally defensible intelligence designed to survive judicial scrutiny.
         </p>
     </section>
 
@@ -272,5 +368,6 @@
 
 </body>
 </html>
+ 
 
 
