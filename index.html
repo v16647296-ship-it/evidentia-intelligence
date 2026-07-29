@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidentia Intelligence™ | Judicial & Corporate Intelligence</title>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --surface-color: #12141c;
+            --border-color: #1f2430;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-dim: rgba(56, 189, 248, 0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            color: var(--text-primary);
+        }
+        .logo span { color: var(--accent); }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 8rem 2rem 5rem 2rem;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        .hero h1 span { color: var(--accent); }
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--text-primary);
+            color: var(--bg-color);
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background 0.2s;
+        }
+        .btn:hover { background-color: var(--accent); }
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 4px;
+        }
+        .card h3 { margin-bottom: 1rem; font-size: 1.2rem; }
+        .card p { color: var(--text-secondary); font-size: 0.95rem; }
+        .footer {
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Evidentia <span>Intelligence™</span></div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#standards">EIS Standard</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Judicial Intelligence.<br>Corporate Due Diligence.<br><span>Decision-Ready Evidence.</span></h1>
+        <p>Institutional-grade open-source intelligence and judicial verification for law firms, corporate counsel, and financial institutions.</p>
+        <a href="#contact" class="btn">Request Consultation</a>
+    </section>
+
+    <section id="services">
+        <h2>Core Practice Areas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Corporate Due Diligence</h3>
+                <p>Comprehensive UBO mapping, corporate network analysis, and structural risk assessment before high-stakes transactions.</p>
+            </div>
+            <div class="card">
+                <h3>Litigation Support</h3>
+                <p>Court-admissible digital evidence packages, cryptographic chain of custody, and verified metadata trails.</p>
+            </div>
+            <div class="card">
+                <h3>Executive Intelligence</h3>
+                <p>Deep background verification, reputation assessment, and hidden affiliation analysis for C-level appointments.</p>
+            </div>
+            <div class="card">
+                <h3>Sanctions & Compliance</h3>
+                <p>Strict 50 Percent Rule audits, ownership tracing, and multi-jurisdictional watchlist screening.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology">
+        <h2>The Evidentia Methodology</h2>
+        <p style="color: var(--text-secondary); max-width: 800px; margin-bottom: 2rem;">
+            Every investigation follows the <strong>Evidentia Intelligence Standard™ (EIS)</strong>. We replace raw data collection with verifiable, reproducible, and legally defensible intelligence designed to withstand judicial and arbitral scrutiny.
+        </p>
+        <div class="grid">
+            <div class="card">
+                <h3>Lawful Collection</h3>
+                <p>Strict adherence to open-source protocols, zero-intrusion boundaries, and global data privacy standards.</p>
+            </div>
+            <div class="card">
+                <h3>Cryptographic Integrity</h3>
+                <p>Instantaneous SHA-256 fingerprinting and secure Chain of Custody manifests for every digital artifact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Secure Contact</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">For confidential inquiries, engagements, or secure channel requests:</p>
+        <p style="font-size: 1.1rem; font-weight: 600; color: var(--accent);">v16647296@gmail.com</p>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 Evidentia Intelligence Bureau. All rights reserved. Built on the Evidentia Intelligence Standard™ (EIS-1.0).
+    </div>
+
+</body>
+</html>
