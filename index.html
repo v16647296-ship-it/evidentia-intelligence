@@ -172,6 +172,45 @@
         .step-num { color: var(--accent); font-size: 0.8rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: block;}
         .step-title { color: var(--text-primary); font-weight: 600; font-size: 1rem; }
 
+        .report-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-color);
+            border-top: 3px solid var(--accent);
+            padding: 2rem;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .report-meta {
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+        }
+        .report-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+        }
+        .report-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        .report-badge {
+            display: inline-block;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 0.8rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            border-radius: 2px;
+        }
+
         .confidentiality-notice {
             background: var(--surface-card);
             border: 1px solid var(--border-color);
@@ -209,7 +248,7 @@
         <nav>
             <a href="#services">Services</a>
             <a href="#industries">Industries</a>
-            <a href="#why-us">Why Evidentia</a>
+            <a href="#reports">Sample Reports</a>
             <a href="#standards">EIS Standard</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -292,6 +331,67 @@
         </div>
     </section>
 
+    <section id="reports">
+        <h2>Sample Reports & Deliverables</h2>
+        <p class="section-desc">Every engagement results in a structured, cryptographically secure, and court-ready documentation package. Below are structural examples of standard output formats.</p>
+        
+        <div class="grid">
+            <div class="report-card">
+                <div>
+                    <div class="report-meta">EIS-1.0 • Standard Dossier</div>
+                    <div class="report-title">Executive Intelligence Report</div>
+                    <div class="report-desc">Comprehensive integrity vetting, conflict-of-interest mapping, and hidden affiliation profiling for C-suite appointments and high-stakes transitions.</div>
+                </div>
+                <div class="report-badge">Format: Cryptographically Signed PDF + Risk Matrix</div>
+            </div>
+
+            <div class="report-card">
+                <div>
+                    <div class="report-meta">EIS-1.0 • Commercial Due Diligence</div>
+                    <div class="report-title">Corporate Due Diligence Report</div>
+                    <div class="report-desc">Deep-dive UBO network analysis, historical litigation tracking, asset footprint assessment, and multi-jurisdictional risk scoring.</div>
+                </div>
+                <div class="report-badge">Format: Verified Dossier + Entity Graph</div>
+            </div>
+
+            <div class="report-card">
+                <div>
+                    <div class="report-meta">EIS-1.0 • Litigation Support</div>
+                    <div class="report-title">Judicial Evidence Package</div>
+                    <div class="report-desc">Court-admissible collection of digital artifacts, verified metadata logs, and complete chain-of-custody documentation designed for arbitration.</div>
+                </div>
+                <div class="report-badge">Format: Court-Ready Evidence Manifest</div>
+            </div>
+
+            <div class="report-card">
+                <div>
+                    <div class="report-meta">EIS-1.0 • Compliance Audit</div>
+                    <div class="report-title">Sanctions Risk Report</div>
+                    <div class="report-desc">Rigorous multi-registry watchlist screening, strict 50-percent rule ownership audits, and transactional exposure evaluation.</div>
+                </div>
+                <div class="report-badge">Format: Compliance Audit Package</div>
+            </div>
+
+            <div class="report-card">
+                <div>
+                    <div class="report-meta">EIS-1.0 • Digital Preservation</div>
+                    <div class="report-title">Digital Chain of Custody</div>
+                    <div class="report-desc">Cryptographic hashing (SHA-256) and tamper-evident preservation protocols applied to web captures, media, and digital documents.</div>
+                </div>
+                <div class="report-badge">Format: Technical Hashing Log</div>
+            </div>
+
+            <div class="report-card">
+                <div>
+                    <div class="report-meta">EIS-1.0 • Executive Summary</div>
+                    <div class="report-title">Executive Brief</div>
+                    <div class="report-desc">Concise, high-level intelligence summary focused on immediate actionable insights, key risk indicators, and strategic recommendations for the boardroom.</div>
+                </div>
+                <div class="report-badge">Format: C-Suite Strategic Brief</div>
+            </div>
+        </div>
+    </section>
+
     <section id="why-us">
         <h2>Why Clients Choose Evidentia</h2>
         <p class="section-desc">Not another generic OSINT provider. We transform publicly available data into structured, verifiable intelligence tailored for high-stakes legal and corporate decisions.</p>
@@ -321,29 +421,6 @@
             <div class="industry-tag" style="background: var(--surface-color);">Reproducible</div>
             <div class="industry-tag" style="background: var(--surface-color);">Defensible</div>
             <div class="industry-tag" style="background: var(--surface-color);">Confidential</div>
-        </div>
-
-        <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Every Engagement Includes</h2>
-        <p class="section-desc" style="margin-bottom: 1.5rem;">Standardized output packages designed for immediate legal and executive review:</p>
-        <div class="grid" style="margin-bottom: 3rem;">
-            <div class="card">
-                <h3>Deliverables Matrix</h3>
-                <ul>
-                    <li>Executive Brief & Key Findings</li>
-                    <li>Structured Risk Matrix</li>
-                    <li>Entity & Affiliation Graph</li>
-                    <li>Chronological Timeline</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Evidentiary Integrity</h3>
-                <ul>
-                    <li>SHA-256 Chain of Custody Manifest</li>
-                    <li>Source Reliability Matrix</li>
-                    <li>Court-Ready Verified PDF Report</li>
-                    <li>Independent Verification Log</li>
-                </ul>
-            </div>
         </div>
 
         <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Investigation Workflow</h2>
@@ -404,6 +481,8 @@
 
 </body>
 </html>
+
+
 
 
  
