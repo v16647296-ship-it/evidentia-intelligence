@@ -145,7 +145,7 @@
                 </ul>
                 <div class="note">Turnaround time is calculated strictly from the moment funds are credited to the account.</div>
             </div>
-            <a href="https://t.me/YourBotName?start=order_auto" class="btn">Order Express Check</a>
+            <a href="https://t.me/evidentia1_intel_bot?start=order_auto" class="btn">Order Express Check</a>
         </div>
 
         <!-- Advanced Manual EDD -->
@@ -161,7 +161,7 @@
                 </ul>
                 <div class="note">Turnaround time is calculated strictly from the moment funds are credited to the account.</div>
             </div>
-            <a href="https://t.me/YourBotName?start=order_manual" class="btn">Request Advanced EDD</a>
+            <a href="https://t.me/evidentia1_intel_bot?start=order_manual" class="btn">Request Advanced EDD</a>
         </div>
     </div>
 
